@@ -1,0 +1,60 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_SANITY_PROJECT_ID": {
+      "description": "Sanity Project ID",
+      "required": false
+    },
+    "NEXT_PUBLIC_SANITY_DATASET": {
+      "description": "Sanity Dataset (e.g., production)",
+      "value": "production",
+      "required": false
+    },
+    "SANITY_API_TOKEN": {
+      "description": "Sanity API Token for write access",
+      "required": false
+    },
+    "RESEND_API_KEY": {
+      "description": "Resend API key for sending emails",
+      "required": false
+    },
+    "CONTACT_EMAIL": {
+      "description": "Email address to receive enquiries",
+      "value": "info@dandelionsandgrace.fr",
+      "required": true
+    },
+    "NEXT_PUBLIC_TURNSTILE_SITE_KEY": {
+      "description": "Cloudflare Turnstile Site Key for spam protection",
+      "required": false
+    },
+    "TURNSTILE_SECRET_KEY": {
+      "description": "Cloudflare Turnstile Secret Key",
+      "required": false
+    },
+    "NEXT_PUBLIC_SUPABASE_URL": {
+      "description": "Supabase project URL",
+      "required": false
+    },
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": {
+      "description": "Supabase anonymous key",
+      "required": false
+    },
+    "SUPABASE_SERVICE_ROLE_KEY": {
+      "description": "Supabase service role key",
+      "required": false
+    },
+    "SLACK_WEBHOOK_URL": {
+      "description": "Slack webhook URL for notifications",
+      "required": false
+    },
+    "NEXT_PUBLIC_PLAUSIBLE_DOMAIN": {
+      "description": "Domain for Plausible Analytics",
+      "value": "dandelionsandgrace.fr",
+      "required": false
+    }
+  }
+}
