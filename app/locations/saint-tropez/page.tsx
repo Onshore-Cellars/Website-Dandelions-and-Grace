@@ -1,0 +1,18 @@
+import { Metadata } from 'next';
+import { locations } from '@/lib/data/locations';
+import LocationPage from '@/components/locations/LocationPage';
+
+const location = locations['saint-tropez'];
+
+export const metadata: Metadata = {
+  title: `Wedding Florist ${location.name}`,
+  description: location.description,
+  openGraph: {
+    title: `Wedding Florist ${location.name} | Dandelions & Grace`,
+    description: location.description,
+  },
+};
+
+export default function SaintTropezPage() {
+  return <LocationPage location={location} />;
+}
