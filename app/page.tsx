@@ -64,6 +64,26 @@ export default function HomePage() {
 
       <Section background="stone">
         <Container>
+          <div className="text-center max-w-3xl mx-auto mb-12">
+            <p className="text-sm uppercase tracking-widest text-stone-500 mb-8">Featured In</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center opacity-60">
+              {[
+                'Wedding Sparrow',
+                'Style Me Pretty',
+                'Magnolia Rouge',
+                'The Knot',
+              ].map((publication) => (
+                <div key={publication} className="text-center">
+                  <p className="font-display text-xl text-stone-700">{publication}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </Section>
+
+      <Section background="white">
+        <Container>
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="mb-6">Serving the French Riviera</h2>
             <p className="text-xl text-stone-600">
@@ -84,7 +104,7 @@ export default function HomePage() {
               <Link
                 key={location.name}
                 href={location.href}
-                className="card text-center hover:shadow-lg transition-shadow"
+                className="card text-center hover-lift"
               >
                 <h3 className="text-lg">{location.name}</h3>
               </Link>
@@ -93,7 +113,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      <Section background="white">
+      <Section background="stone">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -129,7 +149,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-stone-200 aspect-square flex items-center justify-center">
+            <div className="bg-stone-200 aspect-square flex items-center justify-center image-container">
               <p className="text-stone-400 text-center px-8">
                 [Featured work image]
               </p>
@@ -138,7 +158,7 @@ export default function HomePage() {
         </Container>
       </Section>
 
-      <Section background="stone">
+      <Section background="white">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h2 className="mb-6">Ready to Begin?</h2>
